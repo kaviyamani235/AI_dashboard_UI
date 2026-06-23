@@ -111,7 +111,7 @@ borderWidth:3
 
 
 options:{
-
+ss
 
 responsive:true
 
@@ -121,3 +121,8 @@ responsive:true
 
 
 });
+function login(){
+
+window.location.href="index.html";
+
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>AI Chat</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="chat">
+
+
+<h1>💬 AI Assistant</h1>
+
+
+<div id="response" class="message">
+
+AI: Hello! How can I help you?
+
+</div>
+
+
+
+<input id="question" placeholder="Ask AI">
+
+
+
+<button onclick="askAI()">
+
+Send
+
+</button>
+
+
+</div>
+
+
+
+<script>
+
+
+function askAI(){
+
+
+let question = document.getElementById("question").value;
+
+
+let responseBox = document.getElementById("response");
+
+
+
+responseBox.innerHTML = "🤖 AI is thinking...";
+
+
+
+setTimeout(()=>{
+
+
+let answer = "";
+
+
+
+question = question.toLowerCase();
+
+
+
+if(question.includes("hello") || question.includes("hi")){
+
+
+answer = "Hello! 👋 I am your AI assistant. How can I help you?";
+
+
+}
+
+
+else if(question.includes("ai")){
+
+
+answer = "AI helps computers learn and make smart decisions.";
+
+
+}
+
+
+else if(question.includes("dashboard")){
+
+
+answer = "This AI Dashboard monitors analytics and AI performance.";
+
+
+}
+
+
+else{
+
+
+answer = "I am learning 🤖 Try asking about AI, dashboard, HTML, CSS, or JavaScript.";
+
+
+}
+
+
+
+responseBox.innerHTML = answer;
+
+
+
+},1500);
+
+
+
+}
+
+
+</script>
+
+
+
+</body>
+
+</html>
