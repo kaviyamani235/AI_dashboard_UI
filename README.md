@@ -1,2 +1,2 @@
 open in browse
-http://127.0.0.1:5500/login.html
+ https://kaviyamani235.github.io/AI_dashboard_UI/
