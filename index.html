@@ -24,12 +24,10 @@
 <input id="password" type="password" placeholder="Password">
 
 
-<button id="loginBtn">
-Login
+
+<button onclick="login()">
+Login 🚀
 </button>
-
-
-<button id="signupBtn">
 Create Account
 </button>
 
@@ -152,8 +150,65 @@ alert(error.message);
 
 
 </script>
+<script>
+
+function login(){
+
+let email = document.getElementById("email").value;
+
+let password = document.getElementById("password").value;
 
 
+if(email !== "" && password !== ""){
+
+
+window.location.href = "dashboard.html";
+
+
+}
+
+else{
+
+
+alert("Please enter email and password");
+
+
+}
+
+
+}
+
+
+</script>
+<script>
+
+function login(){
+
+let email = document.getElementById("email").value;
+
+let password = document.getElementById("password").value;
+
+
+if(email !== "" && password !== ""){
+
+
+window.location.href = "dashboard.html";
+
+
+}
+
+else{
+
+
+alert("Enter email and password");
+
+
+}
+
+}
+
+
+</script>
 </body>
 
 </html>
